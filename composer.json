@@ -1,0 +1,12 @@
+{
+    "name": "pusher",
+    "keywords": ["pusher"],
+    "description": "",
+    "homepage": "https://github.com/underblow/pusher",
+    "minimum-stability": "stable",
+    "type": "php lib",
+    "license": "MIT"
+    "autoload": {
+        "psr-4": {"Pusher\\": "src/"}
+    }
+}
