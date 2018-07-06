@@ -7,16 +7,15 @@
     "type": "php lib",
     "license": "MIT",
     "autoload": {
-        "psr-4": {"Pusher\\": "src/"}
+        "psr-4": {"Wow\\": "src/"}
     },
     "authors": [
         {
-            "name": "Andrew",
-            "email": "",
+            "name": "Underblow",
             "homepage": "https://github.com/underblow"
         }
     ],
     "require": {
-        "php": "7.1.*"
+        "php": ">=7.1.0"
     }
 }

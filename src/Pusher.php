@@ -1,6 +1,6 @@
 <?php
 
-namespace Pusher;
+namespace Wow;
 
 class Pusher
 {
@@ -16,7 +16,7 @@ class Pusher
     }
     
     private function request($route, $fields){
-        $url = $this->_host.$route;
+        $url = trim($this->_host,"/").$route;
     
         $fields = json_encode($fields);
         $ch = curl_init();
