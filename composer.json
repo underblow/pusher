@@ -1,5 +1,5 @@
 {
-    "name": "pusher",
+    "name": "underblow/pusher",
     "keywords": ["pusher"],
     "description": "",
     "homepage": "https://github.com/underblow/pusher",
@@ -8,5 +8,15 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {"Pusher\\": "src/"}
+    },
+    "authors": [
+        {
+            "name": "Andrew",
+            "email": "",
+            "homepage": "https://github.com/underblow"
+        }
+    ],
+    "require": {
+        "php": "7.1.*"
     }
 }
