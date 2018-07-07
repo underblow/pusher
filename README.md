@@ -53,23 +53,23 @@ Send message:
 Send message to users:
 ```php    
     //send push messages to users
-	$users = [
-	    [
-			"user_id" => "user_id_1",
-			"params" => [
-				"varibles" => [
-					"count" => 200
-				]
-			]
-	    ],
-	    [
-			"user_id" => "user_id_2",
-			"params" => [
-				"varibles" => [
-					"count" => 150
-				]
-			]
-	    ]
-	];
-	$push->sendMessages("code.message.cat", $users);
+    $users = [
+        [
+            "user_id" => "user_id_1",
+            "params" => [
+                "varibles" => [
+                    "count" => 200
+                ]
+            ]
+        ],
+        [
+            "user_id" => "user_id_2",
+            "params" => [
+                "varibles" => [
+                    "count" => 150
+                ]
+            ]
+        ]
+    ];
+    $push->sendMessages("code.message.cat", $users);
 ```
