@@ -15,9 +15,8 @@ Or add this line to  _require_  section of composer.json:
 ```
 ## Usage
 Initial:
-
-    <?php 
-    
+```php
+<?php 
     use Wow\Pusher;
     
     //project key
@@ -25,15 +24,17 @@ Initial:
     $host = "http://localhost"; //optional parameter
     
     $push = new Pusher($key,$host);
-Add new user:
+```
 
+Add new user:
+```php
     //add new user
     $push->addToken("EMAWf6FJzZAhEKLus23hYXbhdEA1voK7O0kx3XERUnQr85ZB6SPaChZAKwi89eWbwx2wE1ZCh99HQ5MXZAegLNQcIAhcyttmylUA1NTn0JZBwSDsoFiktZBSxAzpA9pfDcrudTZCNeZCzkZCyxOWNKE74gW20WhMJnrCleAZD","user_id_1","+03:00","en-GB"));
-
+```
 
 
 Send message:
-    
+```php    
     //send push message
     $params = [
 	    "notification"=>[
@@ -48,9 +49,9 @@ Send message:
 	    ]
     ];
     $push->sendMessage("code.message.cat","user_id_1",$params);
-
+```
 Send message to users:
-    
+```php    
     //send push messages to users
     $users = [
 	    [
@@ -71,3 +72,4 @@ Send message to users:
 	    ]
     ];
     $push->sendMessages("code.message.cat",$users);
+```
